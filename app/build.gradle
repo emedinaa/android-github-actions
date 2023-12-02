@@ -55,7 +55,10 @@ tasks.withType(io.gitlab.arturbosch.detekt.Detekt).configureEach {
     // include("**/special/package/**") // only analyze a sub package inside src/main/kotlin
     //ignoreAnnotated(['Composable'])
     //ignoreFailures.set(true)
+    ignoreFailures(false)
+    parallel(true)
     include("**/*.kt")
+    exclude("**/*.kts")
     exclude("**/build/**") // but exclude our legacy internal package
 }
 
