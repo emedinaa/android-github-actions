@@ -29,6 +29,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@Suppress("FunctionNaming")
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
@@ -37,6 +38,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     )
 }
 
+@Suppress("FunctionNaming")
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {

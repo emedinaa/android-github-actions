@@ -37,6 +37,7 @@ private val LightColorScheme = lightColorScheme(
     */
 )
 
+@Suppress("FunctionNaming")
 @Composable
 fun DemoAppTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
